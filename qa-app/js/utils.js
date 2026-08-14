@@ -30,7 +30,7 @@ const STORAGE_KEYS = {
    best-effort. */
 const API_BASE = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
   ? 'http://localhost:3001/api'
-  : 'https://bugrail-api.onrender.com/api'; // TODO: replace with your actual Render URL after deploy
+  : 'https://bugrail-api-production.up.railway.app/api';
 
 const Storage = {
   cache: {},

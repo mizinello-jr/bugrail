@@ -1,0 +1,15 @@
+{
+  "name": "bugrail-server",
+  "version": "1.0.0",
+  "description": "MongoDB-backed storage API for BugRail QA App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0"
+  }
+}

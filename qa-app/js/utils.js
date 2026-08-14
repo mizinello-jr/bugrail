@@ -28,7 +28,9 @@ const STORAGE_KEYS = {
    localStorage immediately (so data survives a reload even with the
    server off) and fires the same write to MySQL in the background
    best-effort. */
-const API_BASE = 'http://localhost:3001/api';
+const API_BASE = location.hostname === 'localhost' || location.hostname === '127.0.0.1'
+  ? 'http://localhost:3001/api'
+  : 'https://bugrail-api.onrender.com/api'; // TODO: replace with your actual Render URL after deploy
 
 const Storage = {
   cache: {},
